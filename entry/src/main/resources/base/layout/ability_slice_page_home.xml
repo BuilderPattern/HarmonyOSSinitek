@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:orientation="vertical"
+                   ohos:alignment="horizontal_center"
+                   ohos:id="$+id:slice_page_home_dly">
+
+    <Text
+            ohos:id="$+id:slice_page_home_text"
+            ohos:text="Target Home"
+            ohos:width="match_content"
+            ohos:height="match_content"/>
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="60vp"
+            ohos:alignment="horizontal_center"
+            ohos:orientation="horizontal">
+
+        <Image
+                ohos:id="$+id:slice_page_home_img1"
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:image_src="$media:icon_forecast_selected"/>
+
+        <Image
+                ohos:id="$+id:slice_page_home_img2"
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:image_src="$media:icon_info_selected"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:layout_alignment="bottom"
+            ohos:alignment="bottom"
+            ohos:bottom_padding="10vp"
+            ohos:orientation="horizontal">
+
+        <Text
+                ohos:id="$+id:slice_page_home_tab_home"
+                ohos:text="HOME"
+                ohos:width="match_content"
+                ohos:weight="1"
+                ohos:text_alignment="center"
+                ohos:height="60vp"/>
+
+        <Text
+                ohos:id="$+id:slice_page_home_tab_sinitek"
+                ohos:text="SINITEK"
+                ohos:width="match_content"
+                ohos:weight="1"
+                ohos:text_alignment="center"
+                ohos:height="60vp"/>
+
+        <Text
+                ohos:id="$+id:slice_page_home_tab_mine"
+                ohos:text="MINE"
+                ohos:width="match_content"
+                ohos:weight="1"
+                ohos:text_alignment="center"
+                ohos:height="60vp"/>
+
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

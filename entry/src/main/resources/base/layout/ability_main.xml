@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:orientation="vertical"
+                   ohos:alignment="horizontal_center"
+                   ohos:id="$+id:main_gallery_root">
+
+    <Text
+            ohos:id="$+id:main_title_text"
+            ohos:text="上海SINITEK"
+            ohos:width="match_content"
+            ohos:height="30vp"/>
+
+    <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="60vp"
+            ohos:alignment="horizontal_center"
+            ohos:orientation="horizontal">
+
+        <Image
+                ohos:id="$+id:main_gallery_sync"
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:image_src="$media:icon_forecast_selected"/>
+
+        <Image
+                ohos:id="$+id:main_gallery_more"
+                ohos:width="50vp"
+                ohos:height="50vp"
+                ohos:image_src="$media:icon_info_selected"/>
+    </DirectionalLayout>
+
+
+    <AdaptiveBoxLayout
+            ohos:width="match_parent"
+            ohos:height="match_parent">
+
+        <DirectionalLayout
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:alignment="horizontal_center"
+                ohos:orientation="vertical">
+
+
+            <Image
+                    ohos:id="$+id:main_gallery_sync"
+                    ohos:width="25vp"
+                    ohos:height="25vp"
+                    ohos:top_margin="30vp"
+                    ohos:right_margin="6vp"
+                    ohos:image_src="$media:icon_mine_selected"/>
+
+            <Image
+                    ohos:id="$+id:main_gallery_more"
+                    ohos:width="25vp"
+                    ohos:height="25vp"
+                    ohos:top_margin="30vp"
+                    ohos:right_margin="6vp"
+                    ohos:image_src="$media:icon_optional_selected"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:alignment="horizontal_center"
+                ohos:orientation="vertical">
+
+
+            <Image
+                    ohos:id="$+id:main_gallery_sync"
+                    ohos:width="25vp"
+                    ohos:height="25vp"
+                    ohos:top_margin="30vp"
+                    ohos:right_margin="6vp"
+                    ohos:image_src="$media:icon_mine_selected"/>
+
+            <Image
+                    ohos:id="$+id:main_gallery_more"
+                    ohos:width="25vp"
+                    ohos:height="25vp"
+                    ohos:top_margin="30vp"
+                    ohos:right_margin="6vp"
+                    ohos:image_src="$media:icon_optional_selected"/>
+
+        </DirectionalLayout>
+
+    </AdaptiveBoxLayout>
+</DirectionalLayout>

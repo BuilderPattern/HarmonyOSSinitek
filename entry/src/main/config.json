@@ -1,0 +1,66 @@
+{
+  "app": {
+    "bundleName": "com.example.harmonyosfirst",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.harmonyosfirst",
+    "name": ".HarmonyOSFirst",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.example.harmonyosfirst.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "HarmonyOSFirst",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "visible": true,
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.example.harmonyosfirst.PageAbility",
+        "icon": "$media:icon",
+        "description": "$string:targetability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "singleton"
+      }
+    ],
+    "reqPermissions": {
+      "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+    }
+  }
+}

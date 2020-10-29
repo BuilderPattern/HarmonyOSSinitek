@@ -31,6 +31,24 @@
                 ohos:image_src="$media:icon_info_selected"/>
     </DirectionalLayout>
 
+    <Text
+            ohos:id="$+id:main_title_foreground_text"
+            ohos:text="前台服务"
+            ohos:width="match_content"
+            ohos:height="30vp"/>
+
+    <Text
+            ohos:id="$+id:main_title_data_base_db_visit_text"
+            ohos:text="访问数据库"
+            ohos:width="match_content"
+            ohos:top_margin="20vp"
+            ohos:height="30vp"/>
+
+    <Text
+            ohos:id="$+id:main_title_data_base_db_create_text"
+            ohos:text="创建数据库"
+            ohos:width="match_content"
+            ohos:height="30vp"/>
 
     <AdaptiveBoxLayout
             ohos:width="match_parent"

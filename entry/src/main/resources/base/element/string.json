@@ -15,6 +15,26 @@
     {
       "name": "targetability_description",
       "value": "hap sample empty page"
+    },
+    {
+      "name": "serviceability_description",
+      "value": "hap sample empty service"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "foregroundserviceability_description",
+      "value": "hap sample empty service"
+    },
+    {
+      "name": "visitdataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "operatevisitdataability_description",
+      "value": "hap sample empty page"
     }
   ]
 }

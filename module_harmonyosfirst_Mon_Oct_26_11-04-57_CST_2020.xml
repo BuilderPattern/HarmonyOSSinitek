@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_harmonyosfirst" default="compile.module.harmonyosfirst">
+  <dirname property="module.harmonyosfirst.basedir" file="${ant.file.module_harmonyosfirst}"/>
+  
+  <property name="module.jdk.home.harmonyosfirst" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.harmonyosfirst" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.harmonyosfirst" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.harmonyosfirst" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="harmonyosfirst.output.dir" value="${module.harmonyosfirst.basedir}/build/classes/java/main"/>
+  <property name="harmonyosfirst.testoutput.dir" value="${module.harmonyosfirst.basedir}/build/classes/java/test"/>
+  
+  <path id="harmonyosfirst.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="harmonyosfirst.module.production.classpath">
+    <path refid="${module.jdk.classpath.harmonyosfirst}"/>
+  </path>
+  
+  <path id="harmonyosfirst.runtime.production.module.classpath">
+    <pathelement location="${harmonyosfirst.output.dir}"/>
+  </path>
+  
+  <path id="harmonyosfirst.module.classpath">
+    <path refid="${module.jdk.classpath.harmonyosfirst}"/>
+    <pathelement location="${harmonyosfirst.output.dir}"/>
+  </path>
+  
+  <path id="harmonyosfirst.runtime.module.classpath">
+    <pathelement location="${harmonyosfirst.testoutput.dir}"/>
+    <pathelement location="${harmonyosfirst.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.harmonyosfirst">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.harmonyosfirst">
+    <patternset refid="excluded.from.module.harmonyosfirst"/>
+  </patternset>
+  
+  
+  <target name="compile.module.harmonyosfirst" depends="compile.module.harmonyosfirst.production,compile.module.harmonyosfirst.tests" description="Compile module HarmonyOSFirst"/>
+  
+  <target name="compile.module.harmonyosfirst.production" depends="register.custom.compilers" description="Compile module HarmonyOSFirst; production classes"/>
+  
+  <target name="compile.module.harmonyosfirst.tests" depends="register.custom.compilers,compile.module.harmonyosfirst.production" description="compile module HarmonyOSFirst; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.harmonyosfirst" description="cleanup module">
+    <delete dir="${harmonyosfirst.output.dir}"/>
+    <delete dir="${harmonyosfirst.testoutput.dir}"/>
+  </target>
+</project>

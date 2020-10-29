@@ -96,15 +96,15 @@
   </path>
   
   <path id="library.gradle:_ohos.classpath">
-    <pathelement location="C:/Users/Admin/AppData/Local/Huawei/Sdk/java/3.0.0.80/api/ohos.jar"/>
+    <pathelement location="${basedir}/../../sdk/java/3.0.0.80/api/ohos.jar"/>
   </path>
   
   <path id="library.gradle:_ohos_ivi.classpath">
-    <pathelement location="C:/Users/Admin/AppData/Local/Huawei/Sdk/java/3.0.0.80/api/car/ohos_ivi.jar"/>
+    <pathelement location="${basedir}/../../sdk/java/3.0.0.80/api/car/ohos_ivi.jar"/>
   </path>
   
   <path id="library.gradle:_rt_java.classpath">
-    <pathelement location="C:/Users/Admin/AppData/Local/Huawei/Sdk/java/3.0.0.80/api/rt_java.jar"/>
+    <pathelement location="${basedir}/../../sdk/java/3.0.0.80/api/rt_java.jar"/>
   </path>
   <!-- Register Custom Compiler Taskdefs -->
   <property name="javac2.home" value="${idea.home}/lib"/>

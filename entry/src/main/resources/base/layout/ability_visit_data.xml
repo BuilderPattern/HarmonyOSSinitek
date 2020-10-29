@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:padding="10vp"
+                   ohos:alignment="horizontal_center"
+                   ohos:orientation="vertical">
+
+    <Button
+            ohos:id="$+id:ability_visit_data_insert"
+            ohos:text="插入数据"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:width="160vp"
+            ohos:height="50vp"/>
+
+    <Button
+            ohos:id="$+id:ability_visit_data_delete"
+            ohos:text="删除数据"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:width="160vp"
+            ohos:height="50vp"/>
+
+    <Button
+            ohos:id="$+id:ability_visit_data_update"
+            ohos:text="更新数据"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:width="160vp"
+            ohos:height="50vp"/>
+
+    <Button
+            ohos:id="$+id:ability_visit_data_query"
+            ohos:text="查询数据"
+            ohos:text_alignment="center"
+            ohos:top_margin="10vp"
+            ohos:width="160vp"
+            ohos:height="50vp"/>
+
+</DirectionalLayout>

@@ -57,10 +57,66 @@
         "label": "entry",
         "type": "page",
         "launchType": "singleton"
+      },
+      {
+        "background-mode": [
+          "data-transfer",
+          "location"
+        ],
+        "visible": true,
+        "name": "com.example.harmonyosfirst.ServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:serviceability_description",
+        "type": "service"
+      },
+      {
+        "visible": true,
+        "name": "com.example.harmonyosfirst.ForegroundServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:foregroundserviceability_description",
+        "type": "service"
+      },
+      {
+        "visible": true,
+        "permissions": [
+          "com.example.harmonyosfirst.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.harmonyosfirst.VisitDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:visitdataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.harmonyosfirst.VisitDataAbility"
+      },
+      {
+        "orientation": "landscape",
+        "visible": true,
+        "formEnabled": false,
+        "name": "com.example.harmonyosfirst.OperateVisitDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:operatevisitdataability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.sinitek.permission.DATE_VISIT",
+        "grantMode": "system_grant",
+        "availableScope": [
+          "signature"
+        ]
+      },
+      {
+        "name": "com.sinitek.permission.DATE_WRITE",
+        "grantMode": "system_grant",
+        "availableScope": [
+          "signature"
+        ]
       }
     ],
     "reqPermissions": {
-      "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      "name": "com.sinitek.permission.DATE_VISIT"
     }
   }
 }
